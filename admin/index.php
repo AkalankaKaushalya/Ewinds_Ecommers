@@ -1,4 +1,5 @@
 <?php include '../config.php'; ?>
+<?php  include 'admin_config.php'; ?>
 <?php include 'operations/index_op.php'; ?>
 <?php #require 'dash_config.php'; ?>
 <!DOCTYPE html>
@@ -45,15 +46,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-primary">
+						<div class="widget-stat card bg-success">
 							<div class="card-body">
 								<div class="media">
 									<span class="mr-3">
-										<i class="la la-users"></i>
+										<i class="fa-sharp fa-solid fa-cash-register"></i>
 									</span>
 									<div class="media-body text-white">
-										<p class="mb-1">Total Customers</p>
-										<h3 class="text-white"><?php #echo $total_users; ?></h3>
+										<p class="mb-1">Total New Orders</p>
+										<h3 class="text-white"><?php echo $total_new_orders; ?></h3>
 										
 									</div>
 								</div>
@@ -65,7 +66,7 @@
 							<div class="card-body">
 								<div class="media">
 									<span class="mr-3">
-										<i class="fa-solid fa-car"></i>
+										<i class="fa-sharp fa-solid fa-bag-shopping"></i>
 									</span>
 									<div class="media-body text-white">
 										<p class="mb-1">All Products</p>
@@ -77,36 +78,36 @@
 						</div>
                     </div>
 					<div class="col-xl-3 col-xxl-3 col-sm-6">
-						<div class="widget-stat card bg-secondary">
+						<div class="widget-stat card bg-info">
 							<div class="card-body">
 								<div class="media">
 									<span class="mr-3">
-										<i class="fa-solid fa-building"></i>
+										<i class="fa-solid fa-truck"></i>
 									</span>
 									<div class="media-body text-white">
-										<p class="mb-1">Sevice Transaction</p>
-										<h3 class="text-white"><?php #echo $total_service_service; ?></h3>
+										<p class="mb-1">Total New Delivery</p>
+										<h3 class="text-white"><?php echo $total_Delivery; ?></h3>
 										
 									</div>
 								</div>
 							</div>
 						</div>
                     </div>
-					<!-- <div class="col-xl-3 col-xxl-3 col-sm-6">
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
 						<div class="widget-stat card bg-danger">
 							<div class="card-body">
 								<div class="media">
 									<span class="mr-3">
-										<i class="fa-sharp fa-solid fa-wrench"></i>
+										<i class="fa-solid fa-cube"></i>
 									</span>
 									<div class="media-body text-white">
-										<p class="mb-1">All Parts Ads</p>
-										<h3 class="text-white"><?php #echo $total_service_parts; ?></h3>
+										<p class="mb-1">All Category</p>
+										<h3 class="text-white"><?php echo $total_category; ?></h3>
 									</div>
 								</div>
 							</div>
 						</div>
-                    </div> -->
+                    </div>
 				</div>
             </div>
         </div>

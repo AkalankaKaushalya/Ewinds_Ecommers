@@ -1,8 +1,6 @@
 <?php  include '../config.php'; ?>
 <?php  include 'admin_config.php'; ?>
-<?php  include 'operations/add_product_op.php'; ?>
-
-
+<?php  include 'operations/update_product_op.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,29 +141,40 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="auth-form">
-                        <h4 class="text-center mb-3">Add Your Product</h4>
+                        <h4 class="text-center mb-3">Update Your Product</h4>
                         <form action="" method="post" enctype="multipart/form-data">
                             <div class="form-row"> 
+
+                                <input type="hidden" name="img1" value="<?php echo $product_row['img1']; ?>">
+
+                                <input type="hidden" name="img2" value="<?php echo $product_row['img2']; ?>">
+
+                                <input type="hidden" name="img3" value="<?php echo $product_row['img3']; ?>">
+
+                                <input type="hidden" name="img4" value="<?php echo $product_row['img4']; ?>">
+
+                                <input type="hidden" name="img5" value="<?php echo $product_row['img5']; ?>">
+
                               <div class="form-group col-md-6">
                                   <label><strong>Product Name</strong></label>
-                                  <input type="text" name="title" class="form-control" placeholder="Enter Product Title" required>
+                                  <input type="text" name="title" class="form-control" placeholder="Enter Product Title" value="<?php echo $product_row['title']; ?>" required>
                               </div>
                               
                               <div class="form-group col-md-6">
                                   <label><strong>Product Price</strong></label>
-                                  <input type="text" name="price" class="form-control" placeholder="Enter Price" required>
+                                  <input type="text" name="price" class="form-control" placeholder="Enter Price" value="<?php echo $product_row['price']; ?>" required>
                               </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label><strong>Short Description</strong></label>
-                                    <textarea  name="shot_description" class="form-control" placeholder="Enter Short Description" rows="3" required></textarea>
+                                    <textarea  name="shot_description" class="form-control" placeholder="Enter Short Description" rows="3" required><?php echo nl2br($product_row['short_description']); ?></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label><strong>Description</strong></label>
-                                    <textarea  name="description" class="form-control" placeholder="Enter Description" rows="8" required=""></textarea>
+                                    <textarea  name="description" class="form-control" placeholder="Enter Description" rows="8" required=""><?php echo nl2br($product_row['description']); ?></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -173,19 +182,19 @@
                                     <label><strong>Select Category</strong></label>
                                     <select id="inputState" name="category" class="form-control" required>
                                         <option value="" selected >Select Category</option>
-                                        <?php echo $loade_category; ?>
+                                        <?php echo $$list_cat; ?>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-4">
                                   <label><strong>Stock Count</strong></label>
-                                  <input type="number" name="scount" class="form-control" placeholder="Enter Stock Count" required>
+                                  <input type="number" name="scount" class="form-control" placeholder="Enter Stock Count" value="<?php echo $product_row['scount']; ?>" required>
                                 </div>
                                 <div class="form-group col-md-4">
                                   <label><strong>Stock Type</strong></label>
                                   <select id="inputState" name="stock" class="form-control" required>
                                         <option value="" selected >Select Stock Type</option>
-                                        <option value="1" >In Stock</option>
-                                        <option value="0" >Out Stock</option>
+                                        <option value="1" <?php echo $instock; ?> >In Stock</option>
+                                        <option value="0" <?php echo $outstok; ?> >Out Stock</option>
                                   </select>
                                 </div>
                             </div>
@@ -196,30 +205,30 @@
                                 <label><strong>Uplode Your Product Image</strong></label>
                                 <div class="image-container">
                                     <div class="image">
-                                      <img src="https://via.placeholder.com/150x150" id="image-preview1" alt="Image 1" >
-                                      <input type="file" name="price1" id="file-input" accept="*/image" required>
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img1'];?>" id="image-preview1" alt="Image 1" >
+                                      <input type="file" name="price1" id="file-input" accept="*/image" >
                                     </div>
                                     <div class="image">
-                                      <img src="https://via.placeholder.com/150x150" id="image-preview2" alt="Image 2">
-                                      <input type="file" name="price2" id="file-input2" accept="*/image" required>
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img2'];?>" id="image-preview2" alt="Image 2">
+                                      <input type="file" name="price2" id="file-input2" accept="*/image" >
                                     </div>
                                     <div class="image">
-                                      <img src="https://via.placeholder.com/150x150" id="image-preview3" alt="Image 3">
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img3'];?>" id="image-preview3" alt="Image 3">
                                       <input type="file" name="price3" id="file-input3" accept="*/image">
                                     </div>
                                     <div class="image">
-                                      <img src="https://via.placeholder.com/150x150" id="image-preview4" alt="Image 4">
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img4'];?>" id="image-preview4" alt="Image 4">
                                       <input type="file" name="price4" id="file-input4" accept="*/image">
                                     </div>
                                     <div class="image">
-                                      <img src="https://via.placeholder.com/150x150" id="image-preview5" alt="Image 5">
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img5'];?>" id="image-preview5" alt="Image 5">
                                       <input type="file" name="price5" id="file-input5" accept="*/image">
                                     </div>
                                 </div>
                             </div>
         
                             <div class="text-center mt-4">
-                                <button type="submit" name="add_product" class="btn btn-primary btn-block">Add new Product</button>
+                                <button type="submit" name="update_product" class="btn btn-primary">Update this  Product</button>
                             </div>
                         </form>
                           

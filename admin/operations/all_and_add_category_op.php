@@ -76,4 +76,13 @@ while ($row = mysqli_fetch_assoc($res))
             	</tr>     
 				';
 }
+
+
+
+if (isset($_GET['alert'])) 
+{
+    $_SESSION['alert'] = $_GET['alert'];
+    $_SESSION['alert_message'] = $_GET['alert_message'];
+    $_SESSION['alert_text'] = $_GET['alert_text'];
+}
 ?>

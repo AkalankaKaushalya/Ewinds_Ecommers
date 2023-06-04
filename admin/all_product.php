@@ -1,4 +1,5 @@
 <?php  include '../config.php'; ?>
+<?php  include 'admin_config.php'; ?>
 <?php  include 'operations/all_product_op.php'; ?>
 <!DOCTYPE html>
 <html lang="en">

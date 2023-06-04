@@ -19,8 +19,7 @@
                 <div class="bg-img-hero" style="background-image: url(assets/img/1920X422/img1.jpg);">
                     <div class="container min-height-420 overflow-hidden">
                         <div class="js-slick-carousel u-slick" data-pagi-classes="text-center position-absolute right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--long justify-content-start mb-3 mb-md-4 offset-xl-3 pl-2 pb-1">
-                            
-                            <div class="js-slide bg-img-hero-center">
+                            <!-- <div class="js-slide bg-img-hero-center">
                                 <div class="row min-height-420 py-7 py-md-0">
                                     <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
                                         <h1 class="font-size-64 text-lh-57 font-weight-light" data-scs-animation-in="fadeInUp"> THE NEW <span class="d-block font-size-55">STANDARD</span></h1>
@@ -37,47 +36,8 @@
                                         <img class="img-fluid" src="assets/c1.jpg" style="width: 416px; height: 420px;" alt="Image Description">
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="js-slide bg-img-hero-center">
-                                <div class="row min-height-420 py-7 py-md-0">
-                                    <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                        <h1 class="font-size-64 text-lh-57 font-weight-light" data-scs-animation-in="fadeInUp"> THE NEW <span class="d-block font-size-55">STANDARD</span></h1>
-                                        <h6 class="font-size-15 font-weight-bold mb-3"data-scs-animation-in="fadeInUp" data-scs-animation-delay="200">UNDER FAVORABLE SMARTWATCHES</h6>
-                                        <div class="mb-4"data-scs-animation-in="fadeInUp" data-scs-animation-delay="300">
-                                            <span class="font-size-13">FROM</span>
-                                            <div class="font-size-50 font-weight-bold text-lh-45">
-                                            <sup class="">$</sup>749<sup class="">99</sup>
-                                        </div>
-                                        </div>
-                                        <a href="" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16" data-scs-animation-in="fadeInUp" data-scs-animation-delay="400"> Start Buying</a>
-                                    </div>
-                                    <div class="col-xl-5 col-6  d-flex align-items-center" data-scs-animation-in="zoomIn" data-scs-animation-delay="500">
-                                        <img class="img-fluid" src="assets/c3.jpg" style="width: 416px; height: 420px;" alt="Image Description">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="js-slide bg-img-hero-center">
-                                <div class="row min-height-420 py-7 py-md-0">
-                                    <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                        <h1 class="font-size-64 text-lh-57 font-weight-light" data-scs-animation-in="fadeInUp"> THE NEW <span class="d-block font-size-55">STANDARD</span></h1>
-                                        <h6 class="font-size-15 font-weight-bold mb-3"data-scs-animation-in="fadeInUp" data-scs-animation-delay="200">UNDER FAVORABLE SMARTWATCHES</h6>
-                                        <div class="mb-4"data-scs-animation-in="fadeInUp" data-scs-animation-delay="300">
-                                            <span class="font-size-13">FROM</span>
-                                            <div class="font-size-50 font-weight-bold text-lh-45">
-                                            <sup class="">$</sup>749<sup class="">99</sup>
-                                        </div>
-                                        </div>
-                                        <a href="" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16" data-scs-animation-in="fadeInUp" data-scs-animation-delay="400"> Start Buying</a>
-                                    </div>
-                                    <div class="col-xl-5 col-6  d-flex align-items-center" data-scs-animation-in="zoomIn" data-scs-animation-delay="500"> 
-                                        <img class="img-fluid" src="assets/img/416X420/img3.png" alt="Image Description">
-                                    </div>
-                                </div>
-                            </div>
-
+                            </div> -->
+                            <?php echo $banner_product1; ?>
                         </div>
                     </div>
                 </div>
@@ -90,7 +50,7 @@
                     <div class="row">
 
                         <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                            <a href="https://transvelo.github.io/electro-html/2.0/html/shop/shop.html" class="d-black text-gray-90">
+                            <a href="#" class="d-black text-gray-90">
                                 <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
                                     <div class="col-6 col-xl-5 col-wd-6 pr-0">
                                         <img class="img-fluid" src="assets/c3.jpg" style="width: 190px; height: 150px;" alt="Image Description">
@@ -111,7 +71,7 @@
                         </div>
 
                         <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                            <a href="https://transvelo.github.io/electro-html/2.0/html/shop/shop.html" class="d-black text-gray-90">
+                            <a href="#" class="d-black text-gray-90">
                                 <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
                                     <div class="col-6 col-xl-5 col-wd-6 pr-0">
                                         <img class="img-fluid" src="assets/img/190X150/img2.jpg" alt="Image Description">
@@ -132,7 +92,7 @@
                         </div>
 
                         <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                            <a href="https://transvelo.github.io/electro-html/2.0/html/shop/shop.html" class="d-black text-gray-90">
+                            <a href="#" class="d-black text-gray-90">
                                 <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
                                     <div class="col-6 col-xl-5 col-wd-6 pr-0">
                                         <img class="img-fluid" src="assets/img/190X150/img3.jpg" alt="Image Description">
@@ -153,7 +113,7 @@
                         </div>
 
                         <div class="col-md-6 mb-4 mb-xl-0 col-xl-3">
-                            <a href="https://transvelo.github.io/electro-html/2.0/html/shop/shop.html" class="d-black text-gray-90">
+                            <a href="#" class="d-black text-gray-90">
                                 <div class="min-height-132 py-1 d-flex bg-gray-1 align-items-center">
                                     <div class="col-6 col-xl-5 col-wd-6 pr-0">
                                         <img class="img-fluid" src="assets/img/190X150/img4.png" alt="Image Description">
@@ -248,61 +208,19 @@
                                                     </div>
                                                 </div>
                                             </li> -->
-
-                                           
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade pt-2" id="pills-two-example1" role="tabpanel" aria-labelledby="pills-two-example1-tab">
                                         <ul class="row list-unstyled products-group no-gutters">
 
-                                            <li class="col-6 col-wd-3 col-md-4 product-item">
-                                                <div class="product-item__outer h-100">
-                                                    <div class="product-item__inner px-xl-4 p-3">
-                                                        <div class="product-item__body pb-xl-2">
-                                                            <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
-                                                            <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
-                                                            <div class="mb-2">
-                                                                <a href="#" class="d-block text-center"><img class="img-fluid" style="width: 212px; height: 200px;" src="assets/c2.jpg" alt="Image Description"></a>
-                                                            </div>
-                                                            <div class="flex-center-between mb-1">
-                                                                <div class="prodcut-price">
-                                                                    <div class="text-gray-100">$685,00</div>
-                                                                </div>
-                                                                <div class="d-none d-xl-block prodcut-add-cart">
-                                                                    <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            <?php echo $saleproduct; ?>
 
                                         </ul>
                                     </div>
                                     <div class="tab-pane fade pt-2" id="pills-three-example1" role="tabpanel" aria-labelledby="pills-three-example1-tab">
                                         <ul class="row list-unstyled products-group no-gutters">
 
-                                            <li class="col-6 col-wd-3 col-md-4 product-item">
-                                                <div class="product-item__outer h-100">
-                                                    <div class="product-item__inner px-xl-4 p-3">
-                                                        <div class="product-item__body pb-xl-2">
-                                                            <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
-                                                            <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
-                                                            <div class="mb-2">
-                                                                <a href="#" class="d-block text-center"><img class="img-fluid" style="width: 212px; height: 200px;" src="assets/c3.jpg" alt="Image Description"></a>
-                                                            </div>
-                                                            <div class="flex-center-between mb-1">
-                                                                <div class="prodcut-price">
-                                                                    <div class="text-gray-100">$685,00</div>
-                                                                </div>
-                                                                <div class="d-none d-xl-block prodcut-add-cart">
-                                                                    <a href="#" class="btn-add-cart btn-primary transition-3d-hover"><i class="ec ec-add-to-cart"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            <?php echo $topproduct; ?>
                                             
                                         </ul>
                                     </div>
@@ -356,7 +274,7 @@
                                       }
                                     }]'>
 
-                                    <div class="js-slide products-group">
+                                    <!-- <div class="js-slide products-group">
                                         <div class="product-item">
                                             <div class="product-item__outer h-100">
                                                 <div class="product-item__inner px-wd-4 p-2 p-md-3">
@@ -385,27 +303,8 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="js-slide products-group">
-                                        <div class="product-item">
-                                            <div class="product-item__outer h-100">
-                                                <div class="product-item__inner px-wd-4 p-2 p-md-3">
-                                                    <div class="product-item__body pb-xl-2">
-                                                        <div class="mb-2"><a href="#" class="font-size-12 text-gray-5">Speakers</a></div>
-                                                        <h5 class="mb-1 product-item__title"><a href="#" class="text-blue font-weight-bold">Wireless Audio System Multiroom 360 degree Full base audio</a></h5>
-                                                        <div class="mb-2">
-                                                            <a href="#" class="d-block text-center"><img class="img-fluid" src="assets/img/212X200/img1.jpg" alt="Image Description"></a>
-                                                        </div>
-                                                        <div class="flex-center-between mb-1">
-                                                            <div class="prodcut-price">
-                                                                <div class="text-gray-100"><b>$685,00</b></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+ -->
+                                    <?php echo $product2; ?>
                                     
                                 </div>
                             </div>

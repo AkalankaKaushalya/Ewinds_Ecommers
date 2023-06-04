@@ -1,5 +1,45 @@
 <?php 
 
+$product1 = '';
+$get_product1 = "SELECT * FROM product WHERE status = '1' ORDER BY RAND() LIMIT 5";
+$res_product1 = mysqli_query($con, $get_product1);
+while ($row_product1 = mysqli_fetch_assoc($res_product1))
+{
+  
+  $c_id = $row_product1['c_id'];
+  $category = "SELECT * FROM category WHERE id = '$c_id' ";
+  $res_catgory = mysqli_query($con, $category);
+  $category_name = mysqli_fetch_assoc($res_catgory);
+
+  $product1 .= '  
+                    <li class="mb-4">
+                        <div class="row">
+                            <div class="col-auto">
+                                <a href="'.$base_url.'single_product.php?pid='.$row_product1['id'].'" class="d-block width-75">
+                                    <img class="img-fluid" src="'.$base_url.'uplodes/products/'.$row_product1['img1'].'" alt="Image Description">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <h3 class="text-lh-1dot2 font-size-14 mb-0"><a href="'.$base_url.'single_product.php?pid='.$row_product1['id'].'">'.$row_product1['title'].'</a></h3>
+                                <div class="text-warning text-ls-n2 font-size-16 mb-1" style="width: 80px;">
+                                    <small class="fas fa-star"></small>
+                                    <small class="fas fa-star"></small>
+                                    <small class="fas fa-star"></small>
+                                    <small class="fas fa-star"></small>
+                                    <small class="far fa-star text-muted"></small>
+                                </div>
+                                <div class="font-weight-bold">
+                                    <ins class="font-size-15 text-red text-decoration-none d-block">£ '.$row_product1['price'].'</ins>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                ';
+
+}
+
+
+
 $p_id = mysqli_real_escape_string($con,$_GET['pid']);
 
 if (isset($_GET['pid'])) 

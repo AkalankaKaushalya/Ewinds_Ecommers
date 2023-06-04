@@ -41,8 +41,7 @@
                                 <h3 class="section-title section-title__sm mb-0 pb-2 font-size-18">Latest Products</h3>
                             </div>
                             <ul class="list-unstyled">
-
-                                <li class="mb-4">
+                                <!-- <li class="mb-4">
                                     <div class="row">
                                         <div class="col-auto">
                                             <a href="single-product-fullwidth.html" class="d-block width-75">
@@ -64,33 +63,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-
-                                <li class="mb-4">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <a href="single-product-fullwidth.html" class="d-block width-75">
-                                                <img class="img-fluid" src="assets/img/300X300/img3.jpg" alt="Image Description">
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <h3 class="text-lh-1dot2 font-size-14 mb-0"><a href="single-product-fullwidth.html">Notebook Black Spire V Nitro VN7-591G</a></h3>
-                                            <div class="text-warning text-ls-n2 font-size-16 mb-1" style="width: 80px;">
-                                                <small class="fas fa-star"></small>
-                                                <small class="fas fa-star"></small>
-                                                <small class="fas fa-star"></small>
-                                                <small class="fas fa-star"></small>
-                                                <small class="far fa-star text-muted"></small>
-                                            </div>
-                                            <div class="font-weight-bold font-size-15">
-                                                $499.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                
-
+                                </li> -->
+                                 <?php echo $product1; ?>
                             </ul>
                         </div>
                     </div>
@@ -157,8 +131,7 @@
                                                 </div>
                                                 <div class="ml-md-3">
                                                     <button type="submit" name="buy" class="btn px-5 btn-primary-dark transition-3d-hover">Buy This Product</button>
-                                                    <!-- <a href="<?php echo $base_url.'infomation.php?pid='.$product_data['id'].'&qt='.$_POST['quantity']; ?>" class="btn px-5 btn-primary-dark transition-3d-hover">Buy This Product</a>
- -->
+                                                    <!-- <a href="<?php echo $base_url.'infomation.php?pid='.$product_data['id'].'&qt='.$_POST['quantity']; ?>" class="btn px-5 btn-primary-dark transition-3d-hover">Buy This Product</a>-->
                                                 </div>
                                             </div>
                                         </form>

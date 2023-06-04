@@ -1,4 +1,5 @@
 <?php  include '../config.php'; ?>
+<?php  include 'admin_config.php'; ?>
 <?php #include 'opretions/add_student_op.php'; ?>
 <!DOCTYPE html>
 <html lang="en">

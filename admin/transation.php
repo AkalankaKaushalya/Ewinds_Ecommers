@@ -1,8 +1,6 @@
 <?php  include '../config.php'; ?>
 <?php  include 'admin_config.php'; ?>
-<?php  include 'operations/all_and_add_category_op.php'; ?>
-
-
+<?php  include 'operations/transation_op.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,39 +41,27 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
-                        <div class="auth-form col-md-6">
-                          <h4 class="text-center mb-3">Add Category</h4>
-                          <form action="" method="post" enctype="multipart/form-data">
-                              <div class="form-row"> 
-                                <div class="form-group col-md-12">
-                                    <label><strong>Category Name</strong></label>
-                                    <input type="text" name="name" class="form-control" placeholder="Enter Category Name" required>
-                                </div>
-                              </div>
-                              <div class="text-center mt-4">
-                                  <button type="submit" name="add_category" class="btn btn-primary btn-block">Add Category</button>
-                              </div>
-                          </form>
-                        </div>
-
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                           <div class="card">
                             <div class="card-header">
-                              <h4 class="card-title">Category List</h4>
+                              <h4 class="card-title">All Transation List</h4>
                             </div>
                             <div class="card-body">
                               <div class="table-responsive">
                                 <table id="example" class="table table-sm mb-0 table-striped">
                                     <thead>
                                         <tr>
-                                          <th class="py-3">Category ID</th>
-                                          <th class="px-5 py-3">Name</th>
+                                          <th class="py-3">Transation ID</th>
+                                          <th class="px-5 py-3">Oder ID</th>
+                                          <th class="px-5 py-3">Item Name</th>
+                                          <th class="py-3">Price</th>
+                                          <th class="py-3">Date</th>
                                           <th class="py-3">Status</th>
-                                          <th class="py-3">Edit</th>
+                                          
                                         </tr>
                                     </thead>
                                     <tbody id="customers">
-                                              <?php echo $category; ?>
+                                        <?php echo $all_transation; ?>
                                     </tbody>
                                 </table>
                               </div>
@@ -101,8 +87,5 @@
 
     <!-- Footer Script start -->
     <?php require 'include/footer_script.php' ?>
-    <!--  Footer Script end -->
-    
-  
 </body>
 </html>

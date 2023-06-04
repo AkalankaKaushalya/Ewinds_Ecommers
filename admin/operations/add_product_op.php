@@ -71,4 +71,12 @@ if(isset($_POST['add_product']))
 		header("Location: ".$base_url."admin/add_product.php?alert=error&alert_message=Product details Are empty Faild&alert_text= Faild.");
 	} 
 }
+
+
+if (isset($_GET['alert'])) 
+{
+    $_SESSION['alert'] = $_GET['alert'];
+    $_SESSION['alert_message'] = $_GET['alert_message'];
+    $_SESSION['alert_text'] = $_GET['alert_text'];
+}
 ?>

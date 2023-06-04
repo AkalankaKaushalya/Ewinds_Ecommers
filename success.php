@@ -60,6 +60,7 @@ if(!empty($_GET['item_number']) && !empty($_GET['tx']) && !empty($_GET['amt']) &
 
                     require_once 'phpMailer/odear_payment_complite.php';
 
+                    header("Location: ".$base_url."track_order.php?alert=success&alert_message= Tarck Your Order&alert_text= Done.");
                     
                 }
             }

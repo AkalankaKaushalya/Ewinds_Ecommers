@@ -55,7 +55,7 @@ while ($row = mysqli_fetch_assoc($res))
 
        	      		<td>
        	        		<a href="javascript:void(0);" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#view_product_modal'.$row['id'].'"><i class="fa-solid fa-trash"></i></a>
-       	        		<a href="javascript:void(0);" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#edite_product_modal'.$row['id'].'"><i class="fa-solid fa-pen"></i></a>
+       	        		<a href="'.$base_url.'admin/update_product.php?pid='.$row['id'].'" class="btn btn-sm btn-primary" ><i class="fa-solid fa-pen"></i></a>
        	    		</td>
 
                     <div id="view_product_modal'.$row['id'].'" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -158,23 +158,23 @@ while ($row = mysqli_fetch_assoc($res))
                                             <div form="product_'.$row['id'].'" class="image-container">
                                                 <div form="product_'.$row['id'].'" class="image">
                                                   <img src="'.$base_url.'uplodes/products/'.$row['img1'].'" id="image-preview1" alt="Image 1" >
-                                                  <input type="file" name="price1" form="product_'.$row['id'].'" id="file-input" accept="*/image" >
+                                                  <input type="file" name="price1" id="file-input" accept="*/image" >
                                                 </div>
                                                 <div class="image">
                                                   <img src="'.$base_url.'uplodes/products/'.$row['img2'].'" id="image-preview2" alt="Image 2">
-                                                  <input type="file" name="price2" form="product_'.$row['id'].'" id="file-input2" accept="*/image" >
+                                                  <input type="file" name="price2" id="file-input2" accept="*/image" >
                                                 </div>
                                                 <div class="image">
                                                   <img src="'.$base_url.'uplodes/products/'.$row['img3'].'" id="image-preview3" alt="Image 3">
-                                                  <input type="file" name="price3" form="product_'.$row['id'].'" id="file-input3" accept="*/image">
+                                                  <input type="file" name="price3" id="file-input3" accept="*/image">
                                                 </div>
                                                 <div class="image">
                                                   <img src="'.$base_url.'uplodes/products/'.$row['img4'].'" id="image-preview4" alt="Image 4">
-                                                  <input type="file" name="price4" form="product_'.$row['id'].'" id="file-input4" accept="*/image">
+                                                  <input type="file" name="price4" id="file-input4" accept="*/image">
                                                 </div>
                                                 <div class="image">
                                                   <img src="'.$base_url.'uplodes/products/'.$row['img5'].'" id="image-preview5" alt="Image 5">
-                                                  <input type="file" name="price5" form="product_'.$row['id'].'" id="file-input5" accept="*/image">
+                                                  <input type="file" name="price5" id="file-input5" accept="*/image">
                                                 </div>
                                             </div>
                                         </div>
@@ -199,24 +199,7 @@ while ($row = mysqli_fetch_assoc($res))
 if(isset($_POST['update_product']))
 {
 
-        $ph1 = $_FILES['price1']['name'] ?? NULL;
-        $ph2 = $_FILES['price2']['name'] ?? NULL;
-        $ph3 = $_FILES['price3']['name'] ?? NULL;
-        $ph4 = $_FILES['price4']['name'] ?? NULL;
-        $ph5 = $_FILES['price5']['name'] ?? NULL;
-    
-        //file tamp names
-        $t_ph1 = $_FILES['price1']['tmp_name'];
-        $t_ph2 = $_FILES['price2']['tmp_name'];
-        $t_ph3 = $_FILES['price3']['tmp_name'];
-        $t_ph4 = $_FILES['price4']['tmp_name'];
-        $t_ph5 = $_FILES['price5']['tmp_name'];
-        //upload directories with names
-        $fd1 = '../uplodes/products/'.$ph1;
-        $fd2 = '../uplodes/products/'.$ph2;
-        $fd3 = '../uplodes/products/'.$ph3;
-        $fd4 = '../uplodes/products/'.$ph4;
-        $fd5 = '../uplodes/products/'.$ph5;
+        
 
 	if($_POST['title'] != "" AND $_POST['price'] != "" AND $_POST['shot_description'] != "" AND $_POST['category'] !="" AND $_POST['description'] != ""  AND $_POST['scount'] != "" AND $_POST['stock'] != "")
 	{
@@ -237,7 +220,24 @@ if(isset($_POST['update_product']))
 		$stock  = mysqli_real_escape_string($con,$_POST['stock']);
 
   
-
+    $ph1 = $_FILES['price1']['name'];
+    $ph2 = $_FILES['price2']['name'];
+    $ph3 = $_FILES['price3']['name'];
+    $ph4 = $_FILES['price4']['name'];
+    $ph5 = $_FILES['price5']['name'];
+    
+    //file tamp names
+    $t_ph1 = $_FILES['price1']['tmp_name'];
+    $t_ph2 = $_FILES['price2']['tmp_name'];
+    $t_ph3 = $_FILES['price3']['tmp_name'];
+    $t_ph4 = $_FILES['price4']['tmp_name'];
+    $t_ph5 = $_FILES['price5']['tmp_name'];
+    //upload directories with names
+    $fd1 = '../uplodes/products/'.$ph1;
+    $fd2 = '../uplodes/products/'.$ph2;
+    $fd3 = '../uplodes/products/'.$ph3;
+    $fd4 = '../uplodes/products/'.$ph4;
+    $fd5 = '../uplodes/products/'.$ph5;
 		   
 		
 		$img1 = ''; $img2 = ''; $img3 = ''; $img4 = ''; $img5 = '';
@@ -322,4 +322,13 @@ if(isset($_POST['delete_product']))
     }
 }
 
+
+
+
+if (isset($_GET['alert'])) 
+{
+    $_SESSION['alert'] = $_GET['alert'];
+    $_SESSION['alert_message'] = $_GET['alert_message'];
+    $_SESSION['alert_text'] = $_GET['alert_text'];
+}
 ?>

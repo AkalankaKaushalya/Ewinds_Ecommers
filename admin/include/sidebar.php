@@ -39,7 +39,19 @@
 					<span class="nav-text">Transaction</span>
 				</a>
                 <ul aria-expanded="false">
-                    <li><a href="all_transaction.php">All Transaction</a></li>
+                    <li><a href="transation.php">All Transaction</a></li>
+                    <!--  <li><a href="top_services_ads.php">Top Service Ads</a></li> --> 
+                    <!-- <li><a href="add_cours.php">Deactive Service Ads</a></li> --> 
+                </ul>
+            </li>
+
+            <li>
+                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                    <i class="fa-regular fa-money-bill"></i>
+                    <span class="nav-text">Order</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="oders.php">All Order</a></li>
                     <!--  <li><a href="top_services_ads.php">Top Service Ads</a></li> --> 
                     <!-- <li><a href="add_cours.php">Deactive Service Ads</a></li> --> 
                 </ul>

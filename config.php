@@ -15,7 +15,7 @@ else
 
 if ($_SERVER['HTTP_HOST'] == "localhost") 
 {
-	$link .= "/Projects/My_Project/Uk_Ecommers/"; 
+	$link .= "/Projects/My_Project/Ewinds_Ecommers/"; 
     $con = mysqli_connect("localhost" , "root" , "" ,"ewinds");
 }
 else
