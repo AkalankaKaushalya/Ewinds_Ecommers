@@ -103,7 +103,7 @@ while ($row_banner_product1 = mysqli_fetch_assoc($res_banner_product1))
                                 <a href="'.$base_url.'single_product.php?pid='.$row_banner_product1['id'].'" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16" data-scs-animation-in="fadeInUp" data-scs-animation-delay="400"> Start Buying</a>
                             </div>
                             <div class="col-xl-5 col-6  d-flex align-items-center" data-scs-animation-in="zoomIn" data-scs-animation-delay="500"> 
-                                <img class="img-fluid" src="'.$base_url.'uplodes/products/'.$row_banner_product1['img1'].'" style="width: 416px; height: 420px;" alt="Image Description">
+                                <img class="img-fluid danner" src="'.$base_url.'uplodes/products/'.$row_banner_product1['img1'].'"  alt="Image Description">
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ while ($row_banner_product1 = mysqli_fetch_assoc($res_banner_product1))
 
 }
 
-
+// style="width: 416px; height: 420px;"
 
 $saleproduct = '';
 $get_saleproduct = "SELECT * FROM product WHERE status = '1' LIMIT 8";

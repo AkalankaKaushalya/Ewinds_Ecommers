@@ -17,7 +17,9 @@
                 <div class="container">
                     <div class="flex-content-center max-width-620-lg flex-column mx-auto text-center min-height-564">
                         <h1 class="h1 font-weight-bold">About Us</h1>
-                        <p class="text-gray-39 font-size-18 text-lh-default">Passion may be a friendly or eager interest in or admiration for a proposal, cause, discovery, or activity or love to a feeling of unusual excitement.</p>
+                        <p class="text-gray-39 font-size-18 text-lh-default">E-WINDS is a fast growing online retail business operating in the United Kingdom. E-WINDS founded in 2019 and based in Surrey, United Kingdom.</p>
+                        <p class="text-gray-39 font-size-18 text-lh-default"> Our company aims for customers with seamless and trustworthy shopping experience while offering a wide range of quality products at competitive prices.
+                            We would love to hear our customers' 100% satisfaction about our product.</p>
                     </div>
                 </div>
             </div>

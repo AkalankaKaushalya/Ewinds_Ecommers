@@ -4,6 +4,18 @@
 <html lang="en">
 <head>
     <?php require 'include/hader.php' ?>
+    <style type="text/css">
+        .img-fluid.danner{
+            width: 400px;
+            height: 400px;
+        }
+    @media only screen and (max-width: 600px) {
+        .img-fluid.danner{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    </style>
 </head>
 
     <body>

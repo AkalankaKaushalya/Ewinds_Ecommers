@@ -102,7 +102,7 @@
                         </div>
                         <div class="mr-xl-6">
                             <address class="mb-6">
-                                17 Princess Road,<br> London,<br> Greater London NW1 8JR,<br> UK
+                                25 Ashdown Rd,<br> Reigate RH2 7QW<br> UK
                             </address>
                             <h5 class="font-size-14 font-weight-bold mb-3">Hours of Operation</h5>
                             <ul class="list-unstyled mb-6">
