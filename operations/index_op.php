@@ -92,7 +92,7 @@ while ($row_banner_product1 = mysqli_fetch_assoc($res_banner_product1))
                     <div class="js-slide bg-img-hero-center">
                         <div class="row min-height-420 py-7 py-md-0">
                             <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                <h1 class="font-size-64 text-lh-57 font-weight-light" data-scs-animation-in="fadeInUp"> '.$row_banner_product1['title'].' <span class="d-block font-size-55"></span></h1>
+                                <h1 class="font-size-64 text-lh-57 font-weight-light" data-scs-animation-in="fadeInUp"> '.substr($row_banner_product1['title'], 0, 28).' <span class="d-block font-size-55"></span></h1>
                                 <h6 class="font-size-15 font-weight-bold mb-3"data-scs-animation-in="fadeInUp" data-scs-animation-delay="200">'.$category_name['name'].'</h6>
                                 <div class="mb-4"data-scs-animation-in="fadeInUp" data-scs-animation-delay="300">
                                     <span class="font-size-13">FROM</span>

@@ -47,10 +47,25 @@ if(isset($_POST['add_product']))
 		$t_ph5 = $_FILES['price5']['tmp_name'];
 		$fd5 = '../uplodes/products/'.$ph5;
 
+		$ph6 = $_FILES['price6']['name'] ?? NULL;
+		$phz6 = $_FILES['price6']['size'];
+		$t_ph6 = $_FILES['price6']['tmp_name'];
+		$fd6 = '../uplodes/products/'.$ph6;
+
+		$ph7 = $_FILES['price7']['name'] ?? NULL;
+		$phz7 = $_FILES['price7']['size'];
+		$t_ph7 = $_FILES['price7']['tmp_name'];
+		$fd7 = '../uplodes/products/'.$ph7;
+
+		$ph8 = $_FILES['price8']['name'] ?? NULL;
+		$phz8 = $_FILES['price8']['size'];
+		$t_ph8 = $_FILES['price8']['tmp_name'];
+		$fd8 = '../uplodes/products/'.$ph8;
+
 		if (move_uploaded_file($t_ph1, $fd1))
 		{	
-			move_uploaded_file($t_ph2, $fd2); move_uploaded_file($t_ph3, $fd3); move_uploaded_file($t_ph4, $fd4); move_uploaded_file($t_ph5, $fd5);
-			$insert_product = "INSERT INTO product (`c_id`, `title`, `short_description`, `description`, `price`, `img1`, `img2`, `img3`, `img4`, `img5`, `stock`, `scount`, `status`) VALUES ('$category', '$title', '$shot_description', '$description', '$price', '$ph1', '$ph2', '$ph3', '$ph4', '$ph5', '$stock', '$scount', '1')";
+			move_uploaded_file($t_ph2, $fd2); move_uploaded_file($t_ph3, $fd3); move_uploaded_file($t_ph4, $fd4); move_uploaded_file($t_ph5, $fd5); move_uploaded_file($t_ph6, $fd6);move_uploaded_file($t_ph7, $fd7);move_uploaded_file($t_ph8, $fd8);
+			$insert_product = "INSERT INTO product (`c_id`, `title`, `short_description`, `description`, `price`, `img1`, `img2`, `img3`, `img4`, `img5`, `img6`, `img7`, `img8`, `stock`, `scount`, `status`) VALUES ('$category', '$title', '$shot_description', '$description', '$price', '$ph1', '$ph2', '$ph3', '$ph4', '$ph5', '$ph6', '$ph7', '$ph8', '$stock', '$scount', '1')";
 			if(mysqli_query($con, $insert_product))
 			{
 				header("Location: ".$base_url."admin/add_product.php?alert=success&alert_message=Add Product Successful&alert_text= Done.");

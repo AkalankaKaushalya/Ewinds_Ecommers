@@ -76,22 +76,32 @@ if(isset($_POST['update_product']))
     $ph3 = $_FILES['price3']['name'];
     $ph4 = $_FILES['price4']['name'];
     $ph5 = $_FILES['price5']['name'];
-    
+    $ph6 = $_FILES['price6']['name'];
+    $ph7 = $_FILES['price7']['name'];
+    $ph8 = $_FILES['price8']['name'];
+
     //file tamp names
     $t_ph1 = $_FILES['price1']['tmp_name'];
     $t_ph2 = $_FILES['price2']['tmp_name'];
     $t_ph3 = $_FILES['price3']['tmp_name'];
     $t_ph4 = $_FILES['price4']['tmp_name'];
     $t_ph5 = $_FILES['price5']['tmp_name'];
+    $t_ph6 = $_FILES['price6']['tmp_name'];
+    $t_ph7 = $_FILES['price7']['tmp_name'];
+    $t_ph8 = $_FILES['price8']['tmp_name'];
+
     //upload directories with names
     $fd1 = '../uplodes/products/'.$ph1;
     $fd2 = '../uplodes/products/'.$ph2;
     $fd3 = '../uplodes/products/'.$ph3;
     $fd4 = '../uplodes/products/'.$ph4;
     $fd5 = '../uplodes/products/'.$ph5;
-		   
+    $fd6 = '../uplodes/products/'.$ph6;
+    $fd7 = '../uplodes/products/'.$ph7;
+    $fd8 = '../uplodes/products/'.$ph8;
+
 		
-		$img1 = ''; $img2 = ''; $img3 = ''; $img4 = ''; $img5 = '';
+		$img1 = ''; $img2 = ''; $img3 = ''; $img4 = ''; $img5 = ''; $img6 = ''; $img7 = ''; $img8 = '';
     	if($ph1 =="")
     	{
     	  $img1 = $_POST['img1'];
@@ -138,10 +148,37 @@ if(isset($_POST['update_product']))
     	  $img5 = $ph5;
     	}
 
+      if($ph6 =="")
+      {
+        $img6 = $_POST['img6'];
+      }
+      else
+      {
+        $img6 = $ph6;
+      }
+
+      if($ph7 =="")
+      {
+        $img7 = $_POST['img7'];
+      }
+      else
+      {
+        $img7 = $ph7;
+      }
+
+      if($ph8 =="")
+      {
+        $img8 = $_POST['img8'];
+      }
+      else
+      {
+        $img8 = $ph8;
+      }
+
     	    
-		move_uploaded_file($t_ph1, $fd1); move_uploaded_file($t_ph2, $fd2);  move_uploaded_file($t_ph3, $fd3);  move_uploaded_file($t_ph4, $fd4);  move_uploaded_file($t_ph5, $fd5);
+		move_uploaded_file($t_ph1, $fd1); move_uploaded_file($t_ph2, $fd2);  move_uploaded_file($t_ph3, $fd3);  move_uploaded_file($t_ph4, $fd4); move_uploaded_file($t_ph5, $fd5); move_uploaded_file($t_ph6, $fd6); move_uploaded_file($t_ph7, $fd7); move_uploaded_file($t_ph8, $fd8);
 			
-		$insert_product = "UPDATE `product` SET `c_id` = '$category', `title` = '$title', `short_description` = '$shot_description', `description` = '$description', `price` = '$price', `img1` = '$img1', `img2` = '$img2', `img3` = '$img3', `img4` = '$img4', `img5` = '$img5', `stock` = '$stock', `scount` = '$scount' WHERE `id` = '$id'";
+		$insert_product = "UPDATE `product` SET `c_id` = '$category', `title` = '$title', `short_description` = '$shot_description', `description` = '$description', `price` = '$price', `img1` = '$img1', `img2` = '$img2', `img3` = '$img3', `img4` = '$img4', `img5` = '$img5', `img6` = '$img6', `img7` = '$img7', `img8` = '$img8', `stock` = '$stock', `scount` = '$scount' WHERE `id` = '$id'";
 		if(mysqli_query($con, $insert_product))
 		{
 			header("Location: ".$base_url."admin/all_product.php?alert=success&alert_message=Add Product Successful&alert_text= Done.");

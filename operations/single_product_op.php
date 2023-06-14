@@ -101,6 +101,31 @@ if (isset($_GET['pid']))
                       </div>';
         }else{ $img5 = '';}
 
+
+        $img6 = '';
+        if ($product_data['img6'] != "")
+        {
+           $img6 = ' <div class="js-slide">
+                        <img class="img-fluid" src="'.$base_url.'uplodes/products/'.$product_data['img6'].'" alt="Image Description">
+                      </div>';
+        }else{ $img6 = '';}
+
+        $img7 = '';
+        if ($product_data['img7'] != "")
+        {
+           $img7 = ' <div class="js-slide">
+                        <img class="img-fluid" src="'.$base_url.'uplodes/products/'.$product_data['img7'].'" alt="Image Description">
+                      </div>';
+        }else{ $img7 = '';}
+
+        $img8 = '';
+        if ($product_data['img8'] != "")
+        {
+           $img8 = ' <div class="js-slide">
+                        <img class="img-fluid" src="'.$base_url.'uplodes/products/'.$product_data['img8'].'" alt="Image Description">
+                      </div>';
+        }else{ $img8 = '';}
+
     }
     else
     {

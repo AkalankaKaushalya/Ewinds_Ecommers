@@ -224,6 +224,21 @@
                                       <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img5'];?>" id="image-preview5" alt="Image 5">
                                       <input type="file" name="price5" id="file-input5" accept="*/image">
                                     </div>
+
+                                    <div class="image">
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img6'];?>" id="image-preview6" alt="Image 6">
+                                      <input type="file" name="price6" id="file-input6" accept="*/image">
+                                    </div>
+
+                                    <div class="image">
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img7'];?>" id="image-preview7" alt="Image 7">
+                                      <input type="file" name="price7" id="file-input7" accept="*/image">
+                                    </div>
+
+                                    <div class="image">
+                                      <img src="<?php echo $base_url.'uplodes/products/'.$product_row['img8'];?>" id="image-preview8" alt="Image 8">
+                                      <input type="file" name="price8" id="file-input8" accept="*/image">
+                                    </div>
                                 </div>
                             </div>
         
@@ -244,6 +259,8 @@
 
         <!-- Footer start -->
         <?php require 'include/footer.php' ?>
+        <script src="vendor/ckeditor/ckeditor.js"></script>
+        <script>CKEDITOR.replace('description');</script>
         <!--  Footer end -->  
 
     </div>
@@ -336,6 +353,56 @@
         }
     });
 </script>
+
+<script>
+    const fileInput6 = document.getElementById("file-input6");
+    const imagePreview6 = document.getElementById("image-preview6");
+
+    fileInput6.addEventListener("change", function() {
+        const file56 = this.files[0];
+
+        if (file6 && file6.type.startsWith("image/")) {
+            const reader6 = new FileReader();
+            reader6.onload = function(e) {
+                imagePreview6.src = e.target.result;
+            };
+            reader6.readAsDataURL(file6);
+        }
+    });
+</script>
+
+<script>
+    const fileInput7 = document.getElementById("file-input7");
+    const imagePreview5 = document.getElementById("image-preview7");
+
+    fileInput7.addEventListener("change", function() {
+        const file7 = this.files[0];
+
+        if (file7 && file7.type.startsWith("image/")) {
+            const reader7 = new FileReader();
+            reader7.onload = function(e) {
+                imagePreview7.src = e.target.result;
+            };
+            reader7.readAsDataURL(file7);
+        }
+    });
+</script>
+
+<script>
+    const fileInput8 = document.getElementById("file-input8");
+    const imagePreview8 = document.getElementById("image-preview8");
+
+    fileInput8.addEventListener("change", function() {
+        const file8 = this.files[0];
+
+        if (file8 && file8.type.startsWith("image/")) {
+            const reader8 = new FileReader();
+            reader8.onload = function(e) {
+                imagePreview8.src = e.target.result;
+            };
+            reader8.readAsDataURL(file8);
+        }
+    });
     <!--  Footer Script end -->
     
   

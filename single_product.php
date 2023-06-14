@@ -80,6 +80,9 @@
                                         <?php echo $img3; ?>
                                         <?php echo $img4; ?>
                                         <?php echo $img5; ?>
+                                        <?php echo $img6; ?>
+                                        <?php echo $img7; ?>
+                                        <?php echo $img8; ?>
                                     </div>
 
                                     <div id="sliderSyncingThumb" class="js-slick-carousel u-slick u-slick--slider-syncing u-slick--gutters-1 u-slick--transform-off" data-infinite="true" data-slides-show="5" data-is-thumbs="true" data-nav-for="#sliderSyncingNav">
@@ -88,6 +91,9 @@
                                         <?php echo $img3; ?>
                                         <?php echo $img4; ?>
                                         <?php echo $img5; ?>
+                                        <?php echo $img6; ?>
+                                        <?php echo $img7; ?>
+                                        <?php echo $img8; ?>
                                     </div>
                                 </div>
                                 <div class="col-md-7 mb-md-6 mb-lg-0">
